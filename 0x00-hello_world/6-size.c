@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* Main - Print Sizes
+* Main: 'Print Sizes'
 * Description:'A program that prints the size of various computer types'
 * Return: Always 0 (Success)
 */
