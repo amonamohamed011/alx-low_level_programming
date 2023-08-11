@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-* main prints the alphABET
+* main - prints the alphABET
 * Return: Always 0 (Success)
 */
 
