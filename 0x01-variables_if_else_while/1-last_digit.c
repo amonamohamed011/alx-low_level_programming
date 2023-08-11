@@ -2,13 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - prints a text according number 
+* main - prints a text according number
 * Return: Always (Success)
 *
 */
 int main(void)
 {
-int n,x;
+int n,x; 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 x = n % 10;
