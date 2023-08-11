@@ -3,16 +3,16 @@
 #include <stdio.h>
 
 /**
-* main - prints Numbers
+* main - prints lowercase alphabet
 * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-int a;
-for (a = '0'; a <= '9'; a++)
+char low;
+for (low = 'z'; low >= 'a'; low--)
 {
-putchar(a);
+putchar(low);
 }
 putchar('\n');
 return (0);
