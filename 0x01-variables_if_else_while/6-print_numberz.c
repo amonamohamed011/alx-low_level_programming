@@ -9,11 +9,9 @@
 
 int main(void)
 {
-char x;
-for (x = 0; x < 10; x++)
-{
-putchar(x + '0');
-}
+int a;
+for (a = '0'; a <= '0'; a++)
+putchar(a);
 putchar('\n');
 return (0);
 }
