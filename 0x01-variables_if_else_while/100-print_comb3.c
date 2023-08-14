@@ -21,7 +21,7 @@ putchar(p);
 if (a == '8' && p == '9')
 continue;
 putchar(',');
-putchar('');
+putchar(' ');
 }
 }
 }
