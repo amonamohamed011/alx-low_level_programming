@@ -15,11 +15,11 @@ for (i = 1; i <= 98; i++)
 s = t0 + t1;
 if (i != 98)
 {
-printf("%d, ", s);
+printf("%lu, ", s);
 }
 else
 {
-printf("%d\n", s);
+printf("%lu\n", s);
 }
 t0 = t1;
 t1 = s;
