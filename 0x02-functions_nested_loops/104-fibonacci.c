@@ -8,21 +8,17 @@
 */
 int main(void)
 {
-unsigned long int t0 = 0, t1 = 1, s;
-int i;
-for (i = 1; i <= 98; i++)
+int count;
+unsigned long fib1 = 0, fib2 = 1, sum;
+unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
+unsigned long half1, half2;
+for (count = 0; count <= 92; count++)
 {
-s = t0 + t1;
-if (i != 98)
-{
-printf("%lu, ", s);
+sum = fib1 + fib2;
+printf("%lu, ", sum);
+fib1 = fib2;
+fib2 = sum;
 }
-else
-{
-printf("%lu\n", s);
-}
-t0 = t1;
-t1 = s;
-}
-return (0);
-}
+fib1_half1 = fib1 / 10000000000;
+fib2_half1 = fib2 / 10000000000;
+fib1_half2 = fib1 / 10000000000;
