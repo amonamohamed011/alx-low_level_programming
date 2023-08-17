@@ -5,7 +5,7 @@
 * Return: empty
 */
 
-void print_line(char n)
+void print_line(int n)
 {
 int x;
 if (n <= 0)
