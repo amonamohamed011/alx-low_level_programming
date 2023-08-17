@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* print_diagonal - draw a diagonal lines according parameter
+* print_diagonal - Draws a diagonal lines according parameter
 * @n: The number of times to print diagonal lines
 * Return: empty
 */
@@ -18,9 +18,9 @@ for (x = 0; x < n; x++)
 {
 for (y = 0; y < x; y++)
 {
-_putchar(32);
+_putchar(' ');
 }
-_putchar(92);
+_putchar(' ');
 _putchar('\n');
 }
 }
