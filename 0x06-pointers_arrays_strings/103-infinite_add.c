@@ -14,7 +14,7 @@ while (*(n + i) != '\0')
 i++;
 }
 i--;
-for (j = 0; j < i; j++; i--)
+for (j = 0; j < i; j++)
 {
 temp = *(n + j);
 *(n + j) = *(n + i);
@@ -44,7 +44,6 @@ return (0);
 while (j >= 0 || i >= 0 || overflow == 1)
 {
 if (i < 0)
-val1 = 0;
 val1 = 0;
 else
 val1 = *(n1 + i) -'0';
