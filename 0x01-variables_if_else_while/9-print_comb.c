@@ -3,17 +3,16 @@
 #include <stdio.h>
 
 /**
-* main - prints Numbers
+* main - prints numbers
 * Return: Always 0 (Success)
 */
-
 int main(void)
 {
 int x;
-for (x = 0; x < 9; x++)
+for (x = 0; x <= 9; x++)
 {
-printf("%d, ", x);
+putchar('%d, ', x);
 }
-printf("9\n");
+putchar('\n');
 return (0);
 }
