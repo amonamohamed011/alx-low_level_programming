@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* main - prints its own opcodes
-* @argc: number of arguments
-* @argv: array of arguments
+* main - prints the opcodes of itself
+* @argc: the number of arguments
+* @argv: array og arguments
 *
-* Return: Always 0 (Success)
+* Return: Always 0
 */
 int main(int argc, char *argv[])
 {
-int bytes, i;
-char *arr;
+int bytes, index;
+int (*address)(int, char **) = main;
+unsigned char opcode;
 if (argc != 2)
 {
 printf("Error\n");
@@ -22,15 +23,15 @@ if (bytes < 0)
 printf("Error\n");
 exit(2);
 }
-arr = (char *)main;
-for (i = 0; i < bytes; i++)
+for (index = 0; index < bytes; index++)
 {
-if (i == bytes - 1)
-{
-printf("%02hhx\n", arr[i]);
-break;
+opcode = *(unsigned char *)address;
+printf("%.2x", opcode);
+if (index == bytes - 1)
+continue;
+printf(" ");
+address++;
 }
-printf("%02hhx\n", arr[i]);
-}
+printf("\n");
 return (0);
 }
