@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* distint_len - function that returns the number of elements in a,
+* size_t distint_len - function that returns the number of elements in a,
 * linked distint_t list
 * @h: pointer to the head of the list
 *
